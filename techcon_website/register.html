@@ -3,71 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCon 2024 - Register</title>
+    <title>Register for TechCon 2024</title>
 </head>
 <body>
     <header>
+        <h1>Register for TechCon 2024</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="register.html">Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article>
-            <h1>Register for TechCon 2024</h1>
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="user_email" required>
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="user_password" required>
-                </div>
-                <div>
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password" name="user_confirm_password" required>
-                </div>
-                <div>
-                    <label for="conference_type">Conference Type:</label>
-                    <select id="conference_type" name="conference_type">
-                        <option value="virtual">Virtual Pass</option>
-                        <option value="in_person">In-Person Pass</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="preferences">Preferences:</label><br>
-                    <input type="checkbox" id="ai" name="interest_ai" value="AI">
-                    <label for="ai">AI & Machine Learning</label><br>
-                    <input type="checkbox" id="cybersecurity" name="interest_cybersecurity" value="Cybersecurity">
-                    <label for="cybersecurity">Cybersecurity</label><br>
-                    <input type="checkbox" id="webdev" name="interest_webdev" value="WebDev">
-                    <label for="webdev">Web Development</label>
-                </div>
-                <div>
-                    <label for="comments">Comments/Questions:</label>
-                    <textarea id="comments" name="user_comments" rows="4"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Register Now</button>
-                </div>
-            </form>
-        </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
-        </aside>
+        <form action="#" method="post">
+            <div>
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#terms-and-conditions" target="_blank">Terms and Conditions</a></label>
+            </div>
+            <div>
+                <button type="submit">Register Now</button>
+            </div>
+        </form>
     </main>
     <footer>
-        <p>Made by Your Name - <a href="#" target="_blank">here</a>.</p>
+        <p>copyright &copy; 2024 TechCon. All rights reserved.</p>
     </footer>
 </body>
 </html>
